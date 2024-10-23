@@ -1,5 +1,5 @@
 .listItem {
-    border: 1px solid rgb(117, 117, 117);
+    border: 1px solid rgb(255, 255, 255);
     border-radius: 10px;
     padding: 12px;
     width: 310px;
@@ -8,7 +8,7 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
-    background-color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .wraper {
@@ -30,7 +30,7 @@
     gap: 5px;
     font-size: 15px;
     font-weight: 500;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 
@@ -38,22 +38,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #ffffff;
+    background-color: transparent;
     font-size: 14px;
-    font-style: italic;
     border-radius: 50px;
     border: transparent;
-    border: 2px solid #000000;
+    border: 1px solid #ffffff;
     outline: none;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-    color: black;
+    color: rgb(255, 255, 255);
     width: 76px;
     height: 38px;
 }
 
 .deleteButton:hover {
-    background-color: rgb(247, 247, 247);
-    border: 3px solid #000000;
+    border: 2px solid #ffffff;
     outline: none;
 }
 

@@ -1,3 +1,10 @@
+.wrapForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+
 .form {
     display: flex;
     gap: 10px;
@@ -5,10 +12,9 @@
     padding: 26px;
     border-radius: 14px;
     width: 340px;
-    height: 290px;
-    margin-bottom: 14px;
+    height: 350px;
     color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.7);
     text-align: left;
     box-shadow: 3px 3px 4px rgb(71, 71, 71);
     border: 1px solid #ffffff;
@@ -31,13 +37,12 @@
     border: none;
 }
 
-.field:hover {
-    outline: 2px solid rgb(255, 255, 255);
+.field::placeholder {
+    color: white;
 }
 
-.error {
-    font-size: 10px;
-    color: red;
+.field:hover {
+    outline: 2px solid rgb(255, 255, 255);
 }
 
 .button {
@@ -53,6 +58,7 @@
     color: rgb(255, 255, 255);
     width: 92px;
     height: 38px;
+    margin-top: 20px;
 }
 
 .button:hover {

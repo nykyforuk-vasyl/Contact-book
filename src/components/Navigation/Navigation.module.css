@@ -8,7 +8,12 @@
     display: flex;
     align-items: center;
     gap: 8px;
-    outline: 1px solid rgb(73, 73, 73);
+    outline: 1px solid rgb(255, 255, 255);
     border-radius: 40px;
-    padding: 4px 10px;
+    padding: 4px 12px;
+    color: white;
+}
+
+.link:hover {
+    outline: 2px solid rgb(255, 255, 255);
 }

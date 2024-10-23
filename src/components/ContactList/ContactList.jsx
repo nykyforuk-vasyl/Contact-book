@@ -16,6 +16,7 @@ const ContactList = () => {
   return (
     <>
       <div>
+        <p className={s.totatText}>Total contacts: {filteredContacts.length}</p>
         <ul className={s.list}>
           {filteredContacts.map((item) => (
             <Contact key={item.id} {...item} />

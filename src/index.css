@@ -2,51 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
-/* 
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-} */
+:root {}
 
-a {
-  font-weight: 500;
-  color: #000000;
-  text-decoration: inherit;
-}
-
-a:hover {
-  color: #6c5a9e;
-}
 
 body {
-  /* margin: 0; */
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* min-width: 320px;
-  min-height: 100vh; */
-  background-color: #242323;
+  font-family: "Montserrat", sans-serif;
+  background-color: #868686;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(https://www.contactsplus.com/wp-content/uploads/2021/10/Address-Book-Maintenance-4-Tips-and-How-Tos-scaled-e1633102016640-1024x640.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: blur(1px);
+  z-index: -1;
 }
-
 
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-p {
-  margin: 0;
 }
 
 

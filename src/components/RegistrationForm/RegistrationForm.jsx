@@ -1,6 +1,7 @@
 import { Field, Formik, Form } from "formik";
 import { useDispatch } from "react-redux";
 import { register } from "../../redux/auth/operations";
+import s from "./RegistrationForm.module.css";
 
 const RegistrationForm = () => {
   const dispatch = useDispatch();
@@ -17,56 +18,39 @@ const RegistrationForm = () => {
   };
 
   return (
-    <div className="hero bg-base-200 min-h-screen">
-      <div className="hero-content flex-col lg:flex-row-reverse">
-        <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-          <Formik onSubmit={handleSubmit} initialValues={initialValues}>
-            <Form className="card-body">
-              <div className="form-control">
-                <label className="label">
-                  <span className="label-text">Name</span>
-                </label>
-                <Field
-                  name="name"
-                  type="name"
-                  placeholder="name"
-                  className="input input-bordered"
-                  required
-                />
-              </div>
-              <div className="form-control">
-                <label className="label">
-                  <span className="label-text">Email</span>
-                </label>
-                <Field
-                  name="email"
-                  type="email"
-                  placeholder="email"
-                  className="input input-bordered"
-                  required
-                />
-              </div>
-              <div className="form-control">
-                <label className="label">
-                  <span className="label-text">Password</span>
-                </label>
-                <Field
-                  name="password"
-                  type="password"
-                  placeholder="password"
-                  className="input input-bordered"
-                  required
-                />
-              </div>
-              <div className="form-control mt-6">
-                <button type="submit" className="btn btn-primary text-white">
-                  Register
-                </button>
-              </div>
-            </Form>
-          </Formik>
-        </div>
-      </div>
+    <div className={s.wrapForm}>
+      <Formik onSubmit={handleSubmit} initialValues={initialValues}>
+        <Form className={s.form}>
+          <label className={s.label}>Name</label>
+          <Field
+            name="name"
+            type="name"
+            placeholder="name"
+            className={s.field}
+            required
+          />
+          <label className={s.label}>Email</label>
+          <Field
+            name="email"
+            type="email"
+            placeholder="email"
+            className={s.field}
+            required
+          />
+          <label className={s.label}>Password</label>
+          <Field
+            name="password"
+            type="password"
+            placeholder="password"
+            className={s.field}
+            required
+          />
+
+          <button type="submit" className={s.button}>
+            Register
+          </button>
+        </Form>
+      </Formik>
     </div>
   );
 };

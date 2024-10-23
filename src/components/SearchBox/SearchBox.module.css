@@ -1,28 +1,27 @@
 .text {
     font-size: 26px;
     font-weight: 500;
-    color: rgb(236, 236, 236);
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px rgba(204, 204, 204, 0.5);
 }
 
 .input {
+    background-color: rgba(0, 0, 0, 0.5);
     margin-top: 10px;
     border-radius: 26px;
-    outline: 2px solid rgb(189, 189, 189);
+    outline: 1px solid rgb(255, 255, 255);
     border: none;
     width: 380px;
     height: 40px;
     padding: 10px 20px;
     font-size: 18px;
-    color: #000;
+    color: #ffffff;
+}
+
+.input::placeholder {
+    color: white;
 }
 
 .input:hover {
-    outline: 3px solid rgb(189, 189, 189);
-}
-
-.totatText {
-    margin-top: 10px;
-    font-size: 16px;
-    font-weight: 500;
-    color: rgb(236, 236, 236);
+    outline: 2px solid rgb(255, 255, 255);
 }

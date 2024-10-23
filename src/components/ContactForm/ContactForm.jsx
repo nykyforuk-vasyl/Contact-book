@@ -32,11 +32,15 @@ const ContactForm = () => {
       validationSchema={FeedbackSchema}
     >
       <Form className={s.form}>
-        <label htmlFor="name">Name</label>
+        <label className={s.label} htmlFor="name">
+          Name
+        </label>
         <Field className={s.field} type="text" name="name" id="name" />
         <ErrorMessage name="name" component="span" className={s.error} />
 
-        <label htmlFor="number">Number</label>
+        <label className={s.label} htmlFor="number">
+          Number
+        </label>
         <Field className={s.field} type="text" name="number" id="number" />
         <ErrorMessage name="number" component="span" className={s.error} />
 

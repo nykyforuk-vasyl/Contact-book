@@ -13,8 +13,8 @@ const ContactForm = () => {
       .max(50, "Too Long!")
       .required("Required"),
     number: Yup.string()
-      .min(3, "Too short")
-      .max(50, "Too long")
+      .min(5, "Too short")
+      .max(20, "Too long")
       .required("Required"),
   });
 

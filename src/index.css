@@ -2,9 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-
 :root {}
-
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -21,8 +19,36 @@ body::before {
   background-image: url(https://www.contactsplus.com/wp-content/uploads/2021/10/Address-Book-Maintenance-4-Tips-and-How-Tos-scaled-e1633102016640-1024x640.jpg);
   background-size: cover;
   background-position: center;
-  filter: blur(1px);
+  filter: blur(2px);
+  z-index: -2;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.26), rgba(141, 152, 194, 0.205));
+  background-size: 300% 300%;
+  animation: gradientAnimation 15s ease infinite;
   z-index: -1;
+  filter: blur(1px);
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 ul {
@@ -30,7 +56,6 @@ ul {
   padding: 0;
   list-style: none;
 }
-
 
 button {
   /* font-size: 1em; */

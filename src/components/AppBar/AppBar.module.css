@@ -11,14 +11,11 @@
 
 .header {
     display: flex;
-    gap: 80px;
-}
-
-.logo {
-    margin-left: 90px;
+    gap: 90px;
 }
 
 .linkLogo {
+    margin-left: 60px;
     display: flex;
     align-items: center;
     gap: 13px;

@@ -75,11 +75,13 @@
   .wrapper-contacts {
     display: flex;
     flex-direction: column;
-    /* text-align: center; */
   }
 
   .text-welcom {
     padding: 0px 10px;
   }
 
+  .title-book {
+    font-size: 2.5em;
+  }
 }
